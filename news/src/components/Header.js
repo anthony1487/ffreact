@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-         <h1>Ima h1 tag!!</h1>
+         <h1>OneSource</h1>
       </div>
     );
   }
