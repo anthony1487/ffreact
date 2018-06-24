@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 // import Ticker from './Ticker';
 // import Upper from './Upper';
 // import Nav from './Nav';
+// import Lower from './Lower';
 
 import Landing from './Landing';
 import Cat from './Cat';

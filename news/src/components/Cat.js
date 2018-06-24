@@ -4,6 +4,7 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
+import Lower from './Lower';
 import axios from 'axios';
 import Lower from './Lower';
 
@@ -42,7 +43,6 @@ import Lower from './Lower';
               <Ticker breaking={this.state.breaking} />
               <Nav /> 
               <Lower />
-
            
                {/* **WILL CALL CARDS (FULL OF CARD) */}
 

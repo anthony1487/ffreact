@@ -4,7 +4,7 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
-import Lower from "./Lower";
+import Lower from './Lower';
 import axios from 'axios';
 
  class Landing extends Component {
