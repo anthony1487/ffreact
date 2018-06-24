@@ -1,16 +1,19 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+  
+} */
 
 @-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
+    position: static !important; 
   }
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    position: static !important; 
   }
 }
 @keyframes ticker {
@@ -18,10 +21,12 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     visibility: visible;
+    position: static !important; 
   }
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    position: static !important; 
   }
 }
 .ticker-wrap {
@@ -33,8 +38,10 @@
   background-color: rgba(0, 0, 0, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
+  position: static !important; 
 }
 .ticker-wrap .ticker {
+  position: fixed  !Important; 
   display: inline-block;
   height: 4rem;
   line-height: 4rem;
@@ -49,20 +56,29 @@
   animation-name: ticker;
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
+  position: static !important; 
 }
 .ticker-wrap .ticker__item {
   display: inline-block;
   padding: 0 2rem;
   font-size: 2rem;
   color: white;
+  position: static !important; 
 }
 
 body {
   padding-bottom: 5rem;
+  position: static !important; 
 }
+
 
 h1,
 h2,
 p {
   padding: 0 5%;
+  position: static !important; 
+}
+
+.nav{
+  position: static !important;  
 }
