@@ -5,10 +5,10 @@ import React, { Component } from 'react';
 class Upper extends Component {
   render() {
     return (
-        
-        
-      <h1>WORK</h1>
-        
+
+
+      <h1></h1>
+
     );
   }
 }
