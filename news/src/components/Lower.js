@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./css/s_card.css";
 // import { Card, CardImg, CardText, CardBody, CardLink,
 //   CardTitle, CardSubtitle } from 'reactstrap';
