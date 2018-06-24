@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+
 import { BrowserRouter, Route } from 'react-router-dom';
 // import Header from './Header';
 // import Ticker from './Ticker';
@@ -17,6 +17,7 @@ class Main extends Component {
                <Route  path="/:catId" component={ Cat } />
           </div>
      </BrowserRouter>
+
     );
   }
 }
