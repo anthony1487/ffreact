@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Route } from 'react-router-dom';
+import React, { Component } from 'react';
 // import Header from './Header';
 // import Ticker from './Ticker';
 // import Upper from './Upper';

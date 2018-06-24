@@ -5,6 +5,7 @@ import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
 import axios from 'axios';
+import Lower from './Lower';
 
  class Landing extends Component {
     constructor(){
@@ -40,6 +41,8 @@ import axios from 'axios';
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
               <Nav /> 
+              <Lower />
+
            
                {/* **WILL CALL CARDS (FULL OF CARD) */}
 
