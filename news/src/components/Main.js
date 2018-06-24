@@ -3,6 +3,7 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
+import Lower from './Lower';
 class Main extends Component {
   render() {
     return (
@@ -11,6 +12,7 @@ class Main extends Component {
           <Ticker />
           <Upper />
           <Nav />
+          <Lower />
           <Header />
           <Header />
           <Header />
