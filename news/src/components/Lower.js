@@ -3,7 +3,7 @@ import "./css/s_card.css";
 // import { Card, CardImg, CardText, CardBody, CardLink,
 //   CardTitle, CardSubtitle } from 'reactstrap';
 
-const Example = (props) => {
+const Lower = (props) => {
   return (
     <div class="container" style={{display:'inline-block'}}>
     <div class="row">
@@ -82,4 +82,4 @@ const Example = (props) => {
 </div>
 )
 }
-export default Example;
+export default Lower;
