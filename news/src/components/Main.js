@@ -1,4 +1,4 @@
-
+import { Component} from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 // import Header from './Header';
 // import Ticker from './Ticker';
@@ -23,4 +23,3 @@ class Main extends Component {
 }
 
 export default Main;
-
