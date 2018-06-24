@@ -1,22 +1,87 @@
-import React, { Component } from 'react';
 
+import React from 'react';
+import "./css/s_card.css";
+// import { Card, CardImg, CardText, CardBody, CardLink,
+//   CardTitle, CardSubtitle } from 'reactstrap';
 
-class Lower extends Component {
-  render() {
-    return (
-    
-          <div class="card" style={{width: '18rem'}}>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">This is the first news card</p>
-    <a href="https://picsum.photos/200/300" class="card-link">Card link</a>
-    <a href="https://picsum.photos/200/300?image=0" class="card-link">Another link</a>
-  </div>
- </div>
-// </div>
-    );
-  }
+const Lower = (props) => {
+  return (
+    <div class="container" style={{display:'inline-block'}}>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="http://www.fostrap.com/">
+                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
+                </a>
+                <br />
+                <div class="card-content">
+                    <h4 class="card-title">
+                        <a href="http://www.fostrap.com/">
+                            Headline
+                        </a>
+                    </h4>
+                    <div class="">
+                        Short Description
+                    </div>
+                </div>
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="http://www.fostrap.com/">
+                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
+                </a>
+                <br />
+                <div class="card-content">
+                    <h4 class="card-title">
+                        <a href="http://www.fostrap.com/">
+                            Headline
+                        </a>
+                    </h4>
+                    <div class="">
+                        Short Description
+                    </div>
+                </div>
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+                <a class="img-card" href="http://www.fostrap.com/">
+                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
+                </a>
+                <br />
+                <div class="card-content">
+                    <h4 class="card-title">
+                        <a href="http://www.fostrap.com/">
+                            Headline
+                        </a>
+                    </h4>
+                    <div class="">
+                        Short Description
+                    </div>
+                </div>
+                <div class="card-read-more">
+                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+)
 }
-
 export default Lower;
+
