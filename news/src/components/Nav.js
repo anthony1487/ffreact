@@ -9,7 +9,7 @@ class Nav extends Component {
                 <nav className=" center nav bar sticky-top navbar navbar-default">
   <div className="container-fluid">
     <div className="navbar-header">
-      <a className="navbar-brand" href="http://localhost:3005">OneSource</a>
+      <a className="navbar-brand" href="/">OneSource</a>
     </div>
     <ul className="nav navbar-nav" bg-success>
       <li><a href="/world">World</a></li>

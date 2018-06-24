@@ -1,4 +1,3 @@
-
 import React from 'react';
 import "./css/s_card.css";
 // import { Card, CardImg, CardText, CardBody, CardLink,

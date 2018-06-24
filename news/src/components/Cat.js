@@ -7,6 +7,7 @@ import Nav from './Nav';
 import Lower from './Lower';
 import axios from 'axios';
 
+
  class Landing extends Component {
     constructor(){
         super(); 
