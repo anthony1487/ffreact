@@ -5,81 +5,37 @@ import "./css/s_card.css";
 
 const Lower = (props) => {
   return (
-    <div class="container" style={{display:'inline-block'}}>
-    <div class="row">
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
+      <ul id= "fixme">
+    <div className="container " id="turn">
+    <div className="row ">
+        <div className="col-xs-12 col-sm-4 ">
+            <div className="card">
+                <a className="img-card" href="/">
                     <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
                 </a>
                 <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
+                <div className="card-content ">
+                    <h4 className="card-title ">
+                        <a href={props.link}>
+                        {props.title}
                         </a>
                     </h4>
-                    <div class="">
+                    <div className="">
                         Short Description
                     </div>
                 </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
+                <div className="card-read-more ">
+                    <a className="btn btn-link btn-block" href={props.link}>
                         Read More
                     </a>
                 </div>
             </div>
+        </div>
         </div>
 
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
-                        </a>
-                    </h4>
-                    <div class="">
-                        Short Description
-                    </div>
-                </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
-                        </a>
-                    </h4>
-                    <div class="">
-                        Short Description
-                    </div>
-                </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
+       
     </div>
-</div>
+</ul>
 )
 }
 export default Lower;

@@ -4,14 +4,14 @@ import "./css/s_nav.css";
 class Nav extends Component {
   render() {
     return (
-     <div className="nav position-sticky nav">
+     <div className=" sticky-top nav position-sticky nav">
 
-                <nav className=" center nav bar sticky-top navbar navbar-default">
-  <div className="container-fluid">
-    <div className="navbar-header">
-      <a className="navbar-brand" href="/">OneSource</a>
+                <nav className=" sticky-top center nav bar sticky-top navbar navbar-default">
+  <div className="sticky-top container-fluid">
+    <div className="sticky-top navbar-header">
+      <a className="sticky-top navbar-brand" href="/">OneSource</a>
     </div>
-    <ul className="nav navbar-nav" bg-success>
+    <ul className="nav navbar-nav" bg-info>
       <li><a href="/world">World</a></li>
       <li><a href="/technology">Technology</a></li>
       <li><a href="/finance">Finance</a></li>

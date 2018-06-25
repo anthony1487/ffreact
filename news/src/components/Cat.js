@@ -4,7 +4,7 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
-import Lower from './Lower';
+import Maker from './Maker';
 import axios from 'axios';
 
 
@@ -42,7 +42,7 @@ import axios from 'axios';
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
               <Nav /> 
-              <Lower />
+              <Maker type={this.props.match.params.catId}/>
            
                {/* **WILL CALL CARDS (FULL OF CARD) */}
 

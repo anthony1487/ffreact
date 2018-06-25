@@ -1,10 +1,11 @@
+
 import React, { Component } from 'react';
 import "./css/s_ticker.css";
 
 class Ticker extends Component {
   render() {
     return (
-      <div>
+      <div className ="moving">
          
         <div className="ticker-wrap">
         <div className="ticker">
@@ -26,5 +27,3 @@ class Ticker extends Component {
 }
 
 export default Ticker;
-
-
