@@ -4,7 +4,8 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
-import Lower from './Lower';
+import Maker from './Maker';
+// import Lower from './Lower';
 import axios from 'axios';
 
  class Landing extends Component {
@@ -36,14 +37,14 @@ import axios from 'axios';
     return (
         <div>
           
-             <Header type="Home" />
+             <Header type="News" />
               <Ticker breaking={this.state.breaking} />
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
               <Nav /> 
-              <Lower />
+              <Maker kind="rand"/>
              
-               {/* **WILL CALL CARDS (FULL OF CARD) */}
+             
 
         </div>
         
