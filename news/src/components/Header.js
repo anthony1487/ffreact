@@ -5,12 +5,15 @@ class Header extends Component {
   render() {
     return (
       <div>
-      <h1>OneSource</h1>
-      <div class="flex-container"></div>
-        <form class="form-inline md-form form-sm">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"></input>
-        </form>
+      <div>
+        <h1>OneSource</h1>
+      </div>
+      <div class="container">
+          <div class="input-group">
+              <input class="form-control border-right-0"/>
+              <span class="input-group-addon bg-white border-left-0"><ion-icon name="search"></ion-icon></span>
+          </div>
+      </div>
       </div>
       );
   }
