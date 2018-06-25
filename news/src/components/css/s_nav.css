@@ -1,0 +1,8 @@
+
+
+.bar{
+    border: 1px black solid; 
+    background-color: rgba(212, 230, 225, 0.877);
+    border-radius: 0; 
+    position: fixed;
+}
