@@ -1,85 +1,62 @@
-import React, { Component } from 'react';
+import React from "react";
 import "./css/s_card.css";
 // import { Card, CardImg, CardText, CardBody, CardLink,
-//   CardTitle, CardSubtitle } from 'reactstrap';
+//   CardTitle, CardSubtitle } from "reactstrap";
+import {
+  Card,
+  CardPrimaryAction,
+  CardMedia,
+  CardAction,
+  CardActions,
+  CardActionButtons,
+  CardActionIcons
+} from "rmwc/Card";
 
-const Example = (props) => {
+import { Typography } from "rmwc/Typography";
+
+const Lower = (props) => {
   return (
-    <div class="container" style={{display:'inline-block'}}>
-    <div class="row">
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
-                        </a>
-                    </h4>
-                    <div class="">
-                        Short Description
-                    </div>
-                </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
-                        Read More
-                    </a>
-                </div>
-            </div>
+    <Card className= "cardContruct">
+      <CardPrimaryAction>
+        <CardMedia
+          sixteenByNine
+          style={{
+            backgroundImage:
+              'url(https://material-components-web.appspot.com/images/16-9.jpg)'
+          }}
+        />
+        <div style={{ padding: '0 1rem 1rem 1rem' }}>
+          <Typography use="headline6" tag="h2">
+            Our Changing Planet
+          </Typography>
+          <Typography
+            use="subtitle2"
+            tag="h3"
+            theme="text-secondary-on-background"
+            style={{ marginTop: '-1rem' }}
+          >
+            by Kurt Wagner
+          </Typography>
+          <Typography use="body1" tag="div" theme="text-secondary-on-background">
+            Visit ten places on our planet that are undergoing the biggest changes
+            today.
+          </Typography>
         </div>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
-                        </a>
-                    </h4>
-                    <div class="">
-                        Short Description
-                    </div>
-                </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-            <div class="card">
-                <a class="img-card" href="http://www.fostrap.com/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div class="card-content">
-                    <h4 class="card-title">
-                        <a href="http://www.fostrap.com/">
-                            Headline
-                        </a>
-                    </h4>
-                    <div class="">
-                        Short Description
-                    </div>
-                </div>
-                <div class="card-read-more">
-                    <a class="btn btn-link btn-block" href="http://www.fostrap.com/">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      </CardPrimaryAction>
+      <CardActions>
+        <CardActionButtons>
+          <CardAction>Read</CardAction>
+          <CardAction>Bookmark</CardAction>
+        </CardActionButtons>
+        <CardActionIcons>
+          <CardAction
+            iconToggle
+            on={{ label: 'Remove from favorites', content: 'favorite' }}
+            off={{ label: 'Add to favorites', content: 'favorite_border' }}/>
+          <CardAction icon use="share" />
+        </CardActionIcons>
+      </CardActions>
+    </Card>
 )
 }
-export default Example;
+export default Lower;
