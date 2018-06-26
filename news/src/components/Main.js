@@ -1,4 +1,3 @@
-import { Component} from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import React, { Component } from 'react';
 // import Header from './Header';
@@ -25,3 +24,4 @@ class Main extends Component {
 }
 
 export default Main;
+
