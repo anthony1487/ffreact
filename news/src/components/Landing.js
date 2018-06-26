@@ -47,8 +47,6 @@ import Buffer from './Buffer';
               <Buffer />
               <Footer />
 
-              <Buffer />
-
         </div>
 
     );
