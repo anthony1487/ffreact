@@ -12,6 +12,11 @@
   padding: 0;
   
 } */
+.container {
+  width: 25%;
+  float: right;
+}
+
 
 .logo{
     height: 200px;
@@ -25,4 +30,9 @@
   .source{
     padding-top: 2.5%;
     font-stretch: expanded;
+  }
+  .search{
+    border: 2px gray solid; 
+    width: 20%;
+    float: right; 
   }
