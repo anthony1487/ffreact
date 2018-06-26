@@ -44,6 +44,9 @@ import Buffer from './Buffer';
 
               <Nav />
               <Buffer />
+
+              <Buffer />
+
               {/* <Lower /> */}
               
                {/* **WILL CALL CARDS (FULL OF CARD) */}
