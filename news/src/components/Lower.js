@@ -1,42 +1,64 @@
-import React from 'react';
+import React from "react";
 import "./css/s_card.css";
 // import { Card, CardImg, CardText, CardBody, CardLink,
-//   CardTitle, CardSubtitle } from 'reactstrap';
+//   CardTitle, CardSubtitle } from "reactstrap";
+import {
+  Card,
+  CardPrimaryAction,
+  CardMedia,
+  CardAction,
+  CardActions,
+  CardActionButtons,
+  CardActionIcons
+} from "rmwc/Card";
+
+import { Typography } from "rmwc/Typography";
 
 const Lower = (props) => {
   return (
-      <ul id= "fixme">
-    <div className="container " id="turn">
-    <div className="row ">
-        <div className="col-xs-12 col-sm-4 ">
-            <div className="card">
-                <a className="img-card" href="/">
-                    <img src= "http://lorempixel.com/400/200/sports" alt="headline "/>
-                </a>
-                <br />
-                <div className="card-content ">
-                    <h4 className="card-title ">
-                        <a href={props.link}>
-                        {props.title}
-                        </a>
-                    </h4>
-                    <div className="">
-                        Short Description
-                    </div>
-                </div>
-                <div className="card-read-more ">
-                    <a className="btn btn-link btn-block" href={props.link}>
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
 
-       
-    </div>
-</ul>
+    <Card className= "cardContruct">
+      <CardPrimaryAction>
+        <CardMedia
+          sixteenByNine
+          style={{
+            backgroundImage:
+              'url(https://material-components-web.appspot.com/images/16-9.jpg)'
+          }}
+        />
+        <div style={{ padding: '0 1rem 1rem 1rem' }}>
+          <Typography use="headline6" tag="h2">
+            Our Changing Planet
+          </Typography>
+          <Typography
+            use="subtitle2"
+            tag="h3"
+            theme="text-secondary-on-background"
+            style={{ marginTop: '-1rem' }}
+          >
+            by Kurt Wagner
+          </Typography>
+          <Typography use="body1" tag="div" theme="text-secondary-on-background">
+            Visit ten places on our planet that are undergoing the biggest changes
+            today.
+          </Typography>
+        </div>
+      </CardPrimaryAction>
+      <CardActions>
+        <CardActionButtons>
+          <CardAction>Read</CardAction>
+          <CardAction>Bookmark</CardAction>
+        </CardActionButtons>
+        <CardActionIcons>
+          <CardAction
+            iconToggle
+            on={{ label: 'Remove from favorites', content: 'favorite' }}
+            off={{ label: 'Add to favorites', content: 'favorite_border' }}/>
+          <CardAction icon use="share" />
+        </CardActionIcons>
+      </CardActions>
+    </Card>
+
 )
 }
 export default Lower;
-
