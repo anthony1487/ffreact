@@ -39,4 +39,3 @@ const Lower = (props) => {
 )
 }
 export default Lower;
-

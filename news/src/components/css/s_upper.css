@@ -85,4 +85,9 @@ HELLO, STYLEs */
 
 .upper{
     margin-top: 0px; 
+    height:  30vw;
 }
+.carousel{
+  height: 100%; 
+}
+
