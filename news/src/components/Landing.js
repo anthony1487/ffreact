@@ -4,8 +4,13 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
+
 import Lower from './Lower';
 // import Upvote from './Upvote';
+
+// import Maker from './Maker'; must add the maker 
+// // import Lower from './Lower';
+
 import axios from 'axios';
 import Footer from './Footer';
 
@@ -38,6 +43,7 @@ import Footer from './Footer';
     return (
         <div>
 
+
              <Header type="Home" />
               <Ticker breaking={this.state.breaking} />
               <Upper title={this.state.people} />
@@ -47,6 +53,16 @@ import Footer from './Footer';
               <Footer />
 
                {/* **WILL CALL CARDS (FULL OF CARD) */}
+
+          
+//              <Header type="News" />
+//               <Ticker breaking={this.state.breaking} />
+//               <Upper title={this.state.people} />
+//               <Ticker breaking={this.state.breaking} />
+//               <Nav /> 
+//               <Maker kind="rand"/>
+             
+
 
         </div>
 

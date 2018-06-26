@@ -16,6 +16,7 @@ import { Typography } from "rmwc/Typography";
 
 const Lower = (props) => {
   return (
+
     <Card className= "cardContruct">
       <CardPrimaryAction>
         <CardMedia
@@ -57,6 +58,7 @@ const Lower = (props) => {
         </CardActionIcons>
       </CardActions>
     </Card>
+
 )
 }
 export default Lower;
