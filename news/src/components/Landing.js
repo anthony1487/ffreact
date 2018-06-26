@@ -4,9 +4,9 @@ import Header from './Header';
 import Ticker from './Ticker';
 import Upper from './Upper';
 import Nav from './Nav';
-import Maker from './Maker';
 // import Lower from './Lower';
 import axios from 'axios';
+import Buffer from './Buffer';
 
  class Landing extends Component {
     constructor(){
@@ -41,10 +41,13 @@ import axios from 'axios';
               <Ticker breaking={this.state.breaking} />
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
-              <Nav /> 
-              <Maker kind="rand"/>
-             
-             
+
+              <Nav />
+              <Buffer />
+              {/* <Lower /> */}
+              
+               {/* **WILL CALL CARDS (FULL OF CARD) */}
+
 
         </div>
         
