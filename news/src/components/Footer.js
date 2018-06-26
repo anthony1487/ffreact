@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 
 import "./css/s_footer.css";
@@ -31,8 +32,5 @@ class Footer extends Component {
             </div>
           </div>
         </footer>
-    );
-  }
-}
 
 export default Footer;

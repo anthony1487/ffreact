@@ -46,10 +46,8 @@ import Buffer from './Buffer';
               <Nav />
               <Buffer />
               <Footer />
-              {/* <Lower /> */}
 
-               {/* **WILL CALL CARDS (FULL OF CARD) */}
-
+              <Buffer />
 
         </div>
 
