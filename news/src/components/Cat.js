@@ -6,21 +6,20 @@ import Upper from './Upper';
 import Nav from './Nav';
 import Maker from './Maker';
 import axios from 'axios';
-import Footer from './Footer';
 
 
  class Landing extends Component {
     constructor(){
-        super();
+        super(); 
         this.state = {
-            people: [],
+            people: [], 
             breaking: []
         }
-
+    
     }
 
 
-
+   
     componentWillMount() {
         axios.get(`https://content.guardianapis.com/search?q=${this.props.match.params.catId}&api-key=c78d3ee2-a1b2-43f4-9d66-ac228f6b6a0d`).then(
            response => this.setState({ people: [response.data.response.results[7].webTitle,response.data.response.results[9].webTitle,response.data.response.results[5].webTitle]})
@@ -28,29 +27,27 @@ import Footer from './Footer';
        axios.get('https://content.guardianapis.com/search?q=breaking&api-key=c78d3ee2-a1b2-43f4-9d66-ac228f6b6a0d').then(
            response => this.setState({ breaking: [response.data.response.results[0].webTitle +"         ",response.data.response.results[1].webTitle+"          ",response.data.response.results[2].webTitle +"         "]})
        );
-
+     
     }
 
-
-
-
+  
+  
+  
     render() {
     return (
         <div>
-
+          
              <Header  type={this.props.match.params.catId}/>
               <Ticker breaking={this.state.breaking} />
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
-
-              <Nav />
-              <Lower />
-              <Footer />
-
-              
+              <Nav /> 
+              <Maker type={this.props.match.params.catId}/>
+           
+               {/* **WILL CALL CARDS (FULL OF CARD) */}
 
         </div>
-
+        
     );
   }
 }

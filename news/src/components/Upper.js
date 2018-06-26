@@ -21,8 +21,8 @@ class Upper extends Component {
           <h1>{this.props.title[0]}</h1>
           <br />
         </div>
-      </div>
-
+      </div> 
+      
       <div className="item">
           <img src="https://static01.nyt.com/images/2018/06/23/arts/23spoon-item1/merlin_140054841_7c772108-649a-41e3-9f55-af8d633e76e2-superJumbo.jpg?quality=90&auto=webp" alt="background" />
           <div className="carousel-caption">
@@ -38,7 +38,7 @@ class Upper extends Component {
         </div>
       </div>
     </div>
-
+   
     <a href="#myCarousel" role="button" className="left carousel-control" data-slide="prev">
       <span className="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
       <span className="sr-only">Previous</span>
@@ -47,8 +47,16 @@ class Upper extends Component {
       <span className="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
       <span className="sr-only">nextt</span>
     </a>
-  </div>
+  </div> 
 
+
+
+
+
+
+
+
+      
       </div>
     );
   }
