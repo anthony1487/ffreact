@@ -37,15 +37,17 @@ import Buffer from './Buffer';
     return (
         <div>
           
-             <Header type="Home" />
+             <Header type="News" />
               <Ticker breaking={this.state.breaking} />
               <Upper title={this.state.people} />
               <Ticker breaking={this.state.breaking} />
+
               <Nav />
               <Buffer />
               {/* <Lower /> */}
               
                {/* **WILL CALL CARDS (FULL OF CARD) */}
+
 
         </div>
         
