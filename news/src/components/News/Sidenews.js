@@ -9,9 +9,11 @@ class Sidenews extends Component {
             sidenews: [],
         };
     }
-
+    
+    // this.props.news.type
+    // {this.props.news.query}
     componentDidMount() {
-        let url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=09ef819989214e788bd5c136781c8b90`;
+        let url = `/upper/${this.props.news.type}/sources=${this.props.news.query}`;
 
         axios.get(url)
         .then((response) => {
