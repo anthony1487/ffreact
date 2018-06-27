@@ -43,6 +43,16 @@ app.get("/upper/:tagId", async (req, res) => {
  
      res.send(data);
    });
+
+
+
+   app.get("/lower/card/:cat", async (req, res) => {
+    ucat = (`https://newsapi.org/v2/everything?q=${req.params.cat},relevancy&language=en&apiKey=09ef819989214e788bd5c136781c8b90`);
+ 
+     ({ data } = await axios.get(ucat).catch(err => console.log(err)));
+ 
+     res.send(data);
+   });
   
 
 

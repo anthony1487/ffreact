@@ -14,7 +14,7 @@ class News extends Component {
 
     componentDidMount() {
     
-        const url = `/upper/${this.props.news.type}/${this.props.news.query}`;
+        const url = `/lower/card/${this.props.cat}`;
 
         fetch(url)
          .then((response) => {
