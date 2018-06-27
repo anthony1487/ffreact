@@ -11,7 +11,7 @@ class Sidenews extends Component {
             sidenews: [],
         };
     }
-    
+
     // this.props.news.type
     // {this.props.news.query}
     componentDidMount() {
