@@ -16,7 +16,7 @@ const NewSingle = ({item}) => (
       <div className="engagement">
       <a href={item.url} target="_blank">Full article</a>
       <i class="medium material-icons">arrow_drop_up</i>
-      <i class="randomNum">2</i>
+      <i class="randomNum">{Math.floor(Math.random()*100)}</i>
       <i class="medium material-icons">arrow_drop_down</i>
       </div>
        </div>
