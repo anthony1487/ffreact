@@ -9,8 +9,12 @@ class News extends Component {
         };
     }
 
+
+    // `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=09ef819989214e788bd5c136781c8b90
+
     componentDidMount() {
-        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=09ef819989214e788bd5c136781c8b90`;
+    
+        const url = `/upper/${this.props.news.type}/${this.props.news.query}`;
 
         fetch(url)
          .then((response) => {

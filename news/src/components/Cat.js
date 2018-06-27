@@ -26,10 +26,10 @@ import Buffer from './Buffer';
 
 
     componentWillMount() {
-        axios.get(`https://content.guardianapis.com/search?q=${this.props.match.params.catId}&api-key=c78d3ee2-a1b2-43f4-9d66-ac228f6b6a0d`).then(
+        axios.get(`/upper/${this.props.match.params.catId}`).then(
            response => this.setState({ people: [response.data.response.results[7].webTitle,response.data.response.results[9].webTitle,response.data.response.results[5].webTitle]})
        );
-       axios.get('https://content.guardianapis.com/search?q=breaking&api-key=c78d3ee2-a1b2-43f4-9d66-ac228f6b6a0d').then(
+       axios.get('/ticker').then(
            response => this.setState({ breaking: [response.data.response.results[0].webTitle +"         ",response.data.response.results[1].webTitle+"          ",response.data.response.results[2].webTitle +"         "]})
        );
 
