@@ -48,7 +48,7 @@ import Buffer from './Buffer';
               <Ticker breaking={this.state.breaking} />
 
               <Nav />
-              <Buffer />
+              <Buffer type={this.props.match.params.catId} />
               <Footer />
               {/* <Lower /> */}
 

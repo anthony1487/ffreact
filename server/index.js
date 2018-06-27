@@ -37,7 +37,7 @@ app.get("/upper/:tagId", async (req, res) => {
 
   
   app.get("/upper/:tagId/:cat", async (req, res) => {
-    ucat = (`https://newsapi.org/v2/${req.params.tagId}?${req.params.cat}&apiKey=09ef819989214e788bd5c136781c8b90`);
+    ucat = (`https://newsapi.org/v2/${req.params.tagId}?sources=${req.params.tagId}&apiKey=09ef819989214e788bd5c136781c8b90`);
  
      ({ data } = await axios.get(ucat).catch(err => console.log(err)));
  
