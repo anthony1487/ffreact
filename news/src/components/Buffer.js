@@ -13,11 +13,11 @@ class Buffer extends Component {
         },
         news2: {
             type: 'everything',
-            query: 'domains=techcrunch.com&language=en'
+            query: 'source=techcrunch'
         },
         news3: {
           type: 'everything',
-          query: 'q=bitcoin,hacker-news&language=en'
+          query: 'source=hacker-news'
         }
     };
 }
