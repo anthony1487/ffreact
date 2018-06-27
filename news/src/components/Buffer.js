@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import News from './News/News';
 import Sidenews from './News/Sidenews';
+import { Timeline } from 'react-twitter-widgets'
 
 class Buffer extends Component {
   constructor(props) {
@@ -37,6 +38,19 @@ class Buffer extends Component {
           <News news={this.state.news2} />
         </div>
         <div className="col s4">
+        <div>
+          <Timeline 
+          dataSource={{
+            sourceType: 'profile',
+            screenName: 'OneSourceNews1'
+          }}
+          options={{
+            username: 'OncSourceNews',
+            height: '730'
+          }}
+          onLoad={() => console.log('Timeline is loaded!')}
+          />
+        </div>
  <Sidenews news={this.state.news3} />
        </div>
       </div>
