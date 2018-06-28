@@ -29,6 +29,7 @@ class Buffer extends Component {
       <div className="row">
        <div className="col s8" id="lowerBody">
           <News news={this.state.news1} />
+
           <News news={this.state.news2} />
         </div>
         <div className="col s2" id="tweetTweet">

@@ -19,6 +19,7 @@ const NewSingle = ({item}) => (
       <i class="randomNum">{Math.floor(Math.random()*100)}</i>
       <i class="medium material-icons">arrow_drop_down</i>
       </div>
+
        </div>
       </div>
     </div>
